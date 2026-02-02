@@ -30,6 +30,34 @@ Best practices and documentation for deploying [OpenClaw](https://openclaw.ai), 
 
 ---
 
+## Setup Details
+
+### Local Native (No Isolation)
+
+Best for desktop Macs that are always on—Mac Mini, Mac Studio, iMac.
+
+The AI runs directly on your machine with full access to your files. You can say "clean up my Downloads folder" or "summarize that PDF I just saved." Simple to set up, nothing extra to manage.
+
+**Trade-off:** The AI has access to everything you do. Use a dedicated shared folder to keep things organized.
+
+### Local VM (OrbStack)
+
+Best for laptops, experimentation, or when you want a safety net.
+
+OpenClaw runs inside a lightweight Linux VM on your Mac. Isolated from your personal files, easy to delete and start fresh if something goes wrong. Great for learning or demos.
+
+**Trade-off:** No direct file access—you'd need to copy files into the VM.
+
+### Cloud VPS (DigitalOcean + Tailscale)
+
+Best when you need access from anywhere—phone, tablet, multiple computers.
+
+OpenClaw runs on a server in the cloud, always on. Tailscale creates a secure private connection so only you can reach it. DigitalOcean offers a 1-click deployment option.
+
+**Trade-off:** Monthly cost ($12-24) plus you're managing a remote server.
+
+---
+
 ## Resources
 
 - [OpenClaw Website](https://openclaw.ai)

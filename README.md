@@ -21,11 +21,52 @@ Best practices and documentation for deploying [OpenClaw](https://openclaw.ai), 
 
 **New to this?** Start with [REMOTE-CONCEPTS.md](REMOTE-CONCEPTS.md) to understand the trade-offs between local, VM, and cloud deployment.
 
-## Key Concepts
+## The Core Trade-off: Isolation vs. File Access
 
-- **Isolation**: Run OpenClaw in a VM or VPS to keep your personal data separate from the AI agent
-- **Tailscale**: Zero-config VPN for secure access without exposing ports to the internet
-- **OrbStack**: Lightweight VM solution for macOS that makes local testing easy
+There's no single "right" way to run OpenClaw. It depends on how you want to use it.
+
+### Isolation (VM or VPS)
+
+**What you get:**
+- AI agent can't access your personal files, passwords, or system
+- Safe environment to experiment with prompts
+- Easy to reset if something goes wrong
+
+**What you lose:**
+- Can't say "clean up my desktop" or "review that file I just downloaded"
+- Need to manually transfer files to/from the isolated environment
+- More infrastructure to manage
+
+### Local Native (No Isolation)
+
+**What you get:**
+- AI can work directly with your files: organize, summarize, process
+- Simpler setup, nothing extra to manage
+- Natural workflow: "Hey, check my Downloads folder"
+
+**What you lose:**
+- AI has access to everything you have access to
+- Need to trust the prompts you're running
+- Harder to undo if something goes wrong
+
+---
+
+## Which Setup Should You Pick?
+
+| Your Situation | Recommended Setup |
+|----------------|-------------------|
+| Desktop Mac that's always on, want file access | [Local Native](LOCAL-NATIVE-SETUP.md) |
+| Laptop, security-conscious, or experimenting | [Local VM (OrbStack)](LOCAL-VM-SETUP.md) |
+| Need access from multiple devices, anywhere | [Cloud VPS (DigitalOcean)](HOSTED-SETUP.md) |
+| Just want to understand the options first | [Remote Concepts](REMOTE-CONCEPTS.md) |
+
+---
+
+## Key Tools
+
+- **Tailscale**: Zero-config VPN for secure remote access without exposing ports to the internet
+- **OrbStack**: Lightweight VM solution for macOS—spin up a Linux environment in seconds
+- **DigitalOcean**: Simple cloud hosting with 1-click OpenClaw deployment available
 
 ## Resources
 

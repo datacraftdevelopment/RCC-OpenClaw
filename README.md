@@ -2,10 +2,15 @@
 
 Best practices and documentation for deploying [OpenClaw](https://openclaw.ai), the open-source personal AI assistant.
 
+**New to OpenClaw?** Start with [What Is OpenClaw?](WHAT-IS-OPENCLAW.md) to understand what it does and why you might want it.
+
+---
+
 ## What's Here
 
 | Document | Description |
 |----------|-------------|
+| [WHAT-IS-OPENCLAW.md](WHAT-IS-OPENCLAW.md) | What it is, why use it, how it compares to ChatGPT/Claude Code |
 | [REMOTE-CONCEPTS.md](REMOTE-CONCEPTS.md) | Why run OpenClaw remotely, VPN basics, and architecture overview |
 | [LOCAL-NATIVE-SETUP.md](LOCAL-NATIVE-SETUP.md) | Install directly on your Mac (no isolation) |
 | [LOCAL-VM-SETUP.md](LOCAL-VM-SETUP.md) | Run OpenClaw in a local VM using OrbStack |

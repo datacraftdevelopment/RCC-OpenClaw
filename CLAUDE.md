@@ -8,6 +8,7 @@ This repository documents best practices for installing and configuring OpenClaw
 
 ## Documents
 
+- `WHAT-IS-OPENCLAW.md` - What it is, why use it, comparison to ChatGPT/Claude Code
 - `REMOTE-CONCEPTS.md` - Why remote deployment, VPN, and file transfer (high-level concepts)
 - `LOCAL-NATIVE-SETUP.md` - Direct install on Mac (no isolation, best for desktops)
 - `LOCAL-VM-SETUP.md` - Local VM installation using OrbStack

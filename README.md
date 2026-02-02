@@ -7,16 +7,19 @@ Best practices and documentation for deploying [OpenClaw](https://openclaw.ai), 
 | Document | Description |
 |----------|-------------|
 | [REMOTE-CONCEPTS.md](REMOTE-CONCEPTS.md) | Why run OpenClaw remotely, VPN basics, and architecture overview |
-| [LOCAL-VM-SETUP.md](LOCAL-VM-SETUP.md) | Step-by-step guide for running OpenClaw in a local VM using OrbStack |
-| [HOSTED-SETUP.md](HOSTED-SETUP.md) | Full deployment guide for DigitalOcean with Tailscale |
+| [LOCAL-NATIVE-SETUP.md](LOCAL-NATIVE-SETUP.md) | Install directly on your Mac (no isolation) |
+| [LOCAL-VM-SETUP.md](LOCAL-VM-SETUP.md) | Run OpenClaw in a local VM using OrbStack |
+| [HOSTED-SETUP.md](HOSTED-SETUP.md) | Deploy on DigitalOcean with Tailscale |
 
 ## Recommended Approach
 
-**For learning and demos:** Start with [LOCAL-VM-SETUP.md](LOCAL-VM-SETUP.md) using OrbStack. Zero cost, quick setup, great for testing.
+**Desktop Mac (always on):** [LOCAL-NATIVE-SETUP.md](LOCAL-NATIVE-SETUP.md) is the simplest option. Direct file access, no extra infrastructure. Good for Mac Mini, Mac Studio, or iMac setups.
 
-**For production use:** Follow [HOSTED-SETUP.md](HOSTED-SETUP.md) to deploy on DigitalOcean with Tailscale for secure remote access.
+**Learning and demos:** [LOCAL-VM-SETUP.md](LOCAL-VM-SETUP.md) using OrbStack. Isolation without cloud costs, easy to reset.
 
-**New to this?** Read [REMOTE-CONCEPTS.md](REMOTE-CONCEPTS.md) first to understand why we recommend running OpenClaw in an isolated environment rather than directly on your personal machine.
+**Always-on from anywhere:** [HOSTED-SETUP.md](HOSTED-SETUP.md) for DigitalOcean with Tailscale. Access from any device, runs 24/7.
+
+**New to this?** Start with [REMOTE-CONCEPTS.md](REMOTE-CONCEPTS.md) to understand the trade-offs between local, VM, and cloud deployment.
 
 ## Key Concepts
 

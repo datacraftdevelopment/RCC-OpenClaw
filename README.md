@@ -26,7 +26,37 @@ Best practices and documentation for deploying [OpenClaw](https://openclaw.ai), 
 | Laptop, or want a safe sandbox | [Local VM](LOCAL-VM-SETUP.md) | Isolated but no cloud costs. Easy to reset. |
 | Access from anywhere, multiple devices | [Cloud VPS](HOSTED-SETUP.md) | Always on, reach it from your phone. |
 
-**Not sure?** Read [Remote Concepts](REMOTE-CONCEPTS.md) for the trade-offs between isolation and file access.
+**Not sure?** Read [Remote Concepts](REMOTE-CONCEPTS.md) for more on deployment architecture.
+
+---
+
+## The Core Trade-off: Isolation vs. File Access
+
+There's no single "right" way to run OpenClaw. It depends on how you want to use it.
+
+### Isolation (VM or VPS)
+
+**What you get:**
+- AI agent can't access your personal files, passwords, or system
+- Safe environment to experiment with prompts
+- Easy to reset if something goes wrong
+
+**What you lose:**
+- Can't say "clean up my desktop" or "review that file I just downloaded"
+- Need to manually transfer files to/from the isolated environment
+- More infrastructure to manage
+
+### Local Native (No Isolation)
+
+**What you get:**
+- AI can work directly with your files: organize, summarize, process
+- Simpler setup, nothing extra to manage
+- Natural workflow: "Hey, check my Downloads folder"
+
+**What you lose:**
+- AI has access to everything you have access to
+- Need to trust the prompts you're running
+- Harder to undo if something goes wrong
 
 ---
 
